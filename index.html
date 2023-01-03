@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Organic Farming Survey Form</h1>
+    <p id="description">Thank you for taking the time to answer given questions about Organic Farming</p>
+    <form action="" method="post">
+        <fieldset>
+            <!--<legend>Details</legend>-->
+            <label for="name" id="name-label">Name: <input type="textfield" required
+                    placeholder="Enter your name"></label>
+            <label for="email" id="email-label">Email: <input type="email" required
+                    placeholder="Enter you email"></label>
+            <label for="Age" id="number-label">Age(Optional): <input type="number" min="13" max="120"
+                    placeholder="Enter your age"></label>
+            <label for="Education">Highest Education: <select id="dropdown" required>
+                    <option disabled selected value >Select one</option>
+                    <option value="10th">10th</option>
+                    <option value="12th">12th</option>
+                    <option value="Under-Graduate">Under-Graduate</option>
+                    <option value="Post-Graduate">Post-Graduate</option>
+                    <option value="Ph.D/MPhil">Ph.D/MPhil</option>
+                </select>
+            </label>
+            <!--
+            <label for="">checkbox
+                <label for="checbox one"><input type="checkbox" class="box" name="1" id="1"> 1</label>
+                <label for="checbox two"><input type="checkbox" class="box" name="2" id="2"> 2</label>
+                <label for="checbox three"><input type="checkbox" class="box" name="3" id="3"> 3</label>
+            </label>
+            -->
+
+        </fieldset>
+        <fieldset>
+            <!--<legend>Questions</legend>-->
+            <label>What is Organic Farming?
+                <textarea rows="3" cols="30"></textarea></label>
+            <label>How it is different from regular farming practice?
+                <textarea rows="3" cols="30"></textarea></label>
+            <label>What cost/price difference you see between organic products and regular farming products?
+                <textarea rows="3" cols="30"></textarea></label>
+            <label>Do you know any Govt policy related to organic farming?
+                <textarea rows="3" cols="30">
+            </textarea></label>
+            <label>How you see India as a country in next 30 years as growing sector in organic farming?
+                <textarea rows="3" cols="30">
+            </textarea></label>
+        </fieldset>
+        <fieldset>
+            <label>Are you intrested in Organic farming?
+                <label for="yes"><input  class="choice"type="radio" name="intrest" id="yes"> Yes</label>
+                <label for="no"><input class="choice" type="radio" name="intrest" id="no"> No </label>
+                <label for="not sure"> <input class="choice" type="radio" name="intrest" id="not_sure"> Not sure</label>
+            </label>
+            <label>Any comments or suggestions? <textarea placeholder="Enter your comment here..." rows="3" cols="30"></textarea> </label>
+        </fieldset>
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+
+</html>
